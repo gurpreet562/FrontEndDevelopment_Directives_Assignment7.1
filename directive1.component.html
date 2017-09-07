@@ -1,0 +1,18 @@
+
+                <input type="text" placeholder="firstname" [(ngModel)]="first" #firstName><br><br>
+                <input type="text" placeholder="lastname" [(ngModel)]="last" #lastName><br><br>
+                
+                <input type="button" value="login" (click)="showHide = !showHide" ><br><br>
+                <div *ngIf="showHide==true">
+                    <h1> Your Full Name is : Miss {{firstName.value}} {{lastName.value}}</h1>
+           
+                    </div>
+
+                 
+                 
+            
+           
+            
+
+
+    
